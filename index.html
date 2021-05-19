@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dice Game: Run To 20</title>
+    <link rel="stylesheet" href="code.css">
+    <link rel="stylesheet" href="wrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/bfe889eafa.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!--Player 1 Panel-->
+        <div class="player-0-panel">
+            <div class="player-0-panel-name pl0name">
+                Player 1
+            </div>
+            <div class="player-0-panel-live " id="live-0">
+                <i class="fas fa-circle"></i>
+            </div>
+            <div class="player-0-panel-img pl0img">
+                <img src="damir.jpg">
+            </div>
+            <div class="player-0-score-block" id="player-0-score-block" style="overflow: hidden;">
+                <!-- <div class="player-0-score-block-red"></div> 
+                <div class="player-0-score-block-red"></div> 
+                <div class="player-0-score-block-red"></div> 
+                <div class="player-0-score-block-red"></div> 
+                <div class="player-0-score-block-red"></div>  -->
+            </div>
+            <div class="player-0-panel-score">
+                <i class="fas fa-poll"></i> 
+                <span class="player-0-panel-score-figure" id="finalScore-0"> 50</span>
+            </div>
+            <!-- we will add invisible class in player-0-winner through js-->
+            <div class="player-0-winner " id="winner-0">
+                <p class="winner">winner</p>
+                <img src="cris.jpg">
+            </div>
+        </div>  
+        <!--Player 1 Panel End-->
+
+
+
+        
+        <!--Player 2 Panel-->
+        <div class="player-1-panel">
+            <div class="player-0-panel-name pl1name">
+                Player 2
+            </div>
+            <div class="player-0-panel-img pl1img">
+                <img src="erik-mclean-C3T8KTZxTFM-unsplash.jpg">
+            </div>
+            <div class="player-0-panel-live-right " id="live-1">
+                <i class="fas fa-circle"></i>
+            </div>
+            <div class="player-1-score-block" id="player-1-score-block" style="overflow: hidden;">
+  
+                <!-- <div class="player-0-score-block-red"></div> 
+                <div class="player-0-score-block-red"></div> 
+                <div class="player-0-score-block-red"></div> 
+                <div class="player-0-score-block-red"></div> 
+                <div class="player-0-score-block-red"></div> 
+                <div class="player-0-score-block-red"></div> 
+                <div class="player-0-score-block-red"></div>  -->
+            </div>
+
+            <div class="player-1-panel-score">
+                <i class="fas fa-poll"></i> 
+                <span class="player-1-panel-score-figure" id="finalScore-1"> 50</span>
+            </div>
+              <!-- we will add invisible class in player-1-winner through js-->
+            <div class="player-1-winner " id="winner-1">
+                <p class="winner">winner</p>
+                <img src="cris.jpg">
+            </div>
+        </div>
+        <!--Player 2 Panel End-->
+
+
+
+       <!--Dice Panel-->
+        <div class="dice-panel">
+            <div class="dice-1">
+                <img src="dice-6.png" class="dice">
+            </div>
+        </div>
+      <!--Dice Panel End-->
+
+
+      <!--Roll Dice Start -->
+        <button class="btn-roll-dice" ><i class="fas fa-dice"></i>
+            Roll dice
+        </button>
+        <!--Roll Dice End-->
+        
+
+        <!--Restart Start-->
+        <button class="btn-reset"><i class="fas fa-power-off"></i>
+                Restart
+        </button>
+        <!--Restart End-->
+            
+    </div>  <!--Wrapper End-->
+</body>
+
+<!-- Load the dice script-->
+<script src="Dice.js"></script>
+
+</html>
